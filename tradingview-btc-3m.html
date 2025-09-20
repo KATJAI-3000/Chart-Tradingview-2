@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TradingView BTCUSDT Perp - 3m</title>
+    <style>
+      html, body { height: 100%; margin: 0; }
+      #tvchart { position: absolute; inset: 0; }
+    </style>
+  </head>
+  <body>
+    <div class="tradingview-widget-container">
+      <div id="tvchart"></div>
+    </div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+      new TradingView.widget({
+        symbol: "BINANCE:BTCUSDTPERP",  // If your account shows BTCUSDT.P, you can also try "BINANCE:BTCUSDT.P"
+        interval: "3",
+        timezone: "Etc/UTC",
+        theme: "light",
+        style: "1",                 // 1 = Candles
+        locale: "vi_VN",
+        withdateranges: true,
+        hide_side_toolbar: false,
+        allow_symbol_change: true,
+        studies: [],
+        autosize: true,
+        container_id: "tvchart"
+      });
+    </script>
+  </body>
+</html>
